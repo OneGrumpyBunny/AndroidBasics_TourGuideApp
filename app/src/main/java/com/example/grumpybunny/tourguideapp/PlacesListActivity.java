@@ -54,6 +54,7 @@ public class PlacesListActivity extends AppCompatActivity {
 
         // determine which data set to use (array)
 
+        assert view != null;
         if (view.equals("Restaurants")) {
             Log.d("PlacesActivity","Calling Restaurants View");
             prepareRestaurantContent();
@@ -79,12 +80,8 @@ public class PlacesListActivity extends AppCompatActivity {
         // define the typed array resources that hold the data values
         String[] name = getResources().getStringArray(R.array.restaurantNames);
         String[] address = getResources().getStringArray(R.array.restaurantAddress);
-        String[] addressURI = getResources().getStringArray(R.array.restaurantAddressURI);
-        String[] hours = getResources().getStringArray(R.array.restaurantHours);
         String[] phone = getResources().getStringArray(R.array.restaurantPhone);
         String[] website = getResources().getStringArray(R.array.restaurantWebsiteURI);
-        String[] reviewStars = getResources().getStringArray(R.array.restaurantReviewStars);
-        String[] twitter = getResources().getStringArray(R.array.restaurantTwitterURI);
         TypedArray typedArray = getResources().obtainTypedArray(R.array.restaurantPhoto);
 
 
@@ -92,8 +89,8 @@ public class PlacesListActivity extends AppCompatActivity {
         for (int i = 0; i < name.length ; i++) {
 
             int photoResourceId = typedArray.getResourceId(i, 0);
-            Log.d("PlacesActivity", "Restaurants: adding - " + name[i] + " " + address[i] + " " + addressURI[i] + " " + phone[i] + " " + website[i] + " " + reviewStars[i] + " " + photoResourceId + " " + twitter[i] + " " + hours[i]);
-            places.add(new Places(name[i], address[i], addressURI[i], phone[i], website[i], reviewStars[i], photoResourceId, twitter[i], hours[i]));
+            Log.d("PlacesActivity", "Restaurants: adding - " + name[i] + " " + address[i] + " " +  phone[i] + " " + website[i] + " " + photoResourceId );
+            places.add(new Places(name[i], address[i], phone[i], website[i],  photoResourceId));
 
         }
 
@@ -112,20 +109,16 @@ public class PlacesListActivity extends AppCompatActivity {
         // define the typed array resources that hold the data values
         String[] name = getResources().getStringArray(R.array.hotelNames);
         String[] address = getResources().getStringArray(R.array.hotelAddress);
-        String[] addressURI = getResources().getStringArray(R.array.hotelAddressURI);
-        String[] hours = getResources().getStringArray(R.array.hotelHours);
         String[] phone = getResources().getStringArray(R.array.hotelPhone);
         String[] website = getResources().getStringArray(R.array.hotelWebsiteURI);
-        String[] reviewStars = getResources().getStringArray(R.array.hotelReviewStars);
-        String[] twitter = getResources().getStringArray(R.array.hotelTwitterURI);
         TypedArray typedArray = getResources().obtainTypedArray(R.array.hotelPhoto);
 
         // populate the list with values from the typed array resources
         for (int i = 0; i < name.length ; i++) {
 
             int photoResourceId = typedArray.getResourceId(i, 0);
-            Log.d("PlacesActivity", "Hotels: adding - " + name[i] + " " + address[i] + " " + addressURI[i] + " " + phone[i] + " " + website[i] + " " + reviewStars[i] + " " + photoResourceId + " " + twitter[i] + " " + hours[i]);
-            places.add(new Places(name[i], address[i], addressURI[i], phone[i], website[i], reviewStars[i], photoResourceId, twitter[i], hours[i]));
+            Log.d("PlacesActivity", "Hotels: adding - " + name[i] + " " + address[i] + " " +  phone[i] + " " + website[i] + " " + photoResourceId );
+            places.add(new Places(name[i], address[i], phone[i], website[i],  photoResourceId));
 
         }
 
@@ -143,20 +136,16 @@ public class PlacesListActivity extends AppCompatActivity {
         // define the typed array resources that hold the data values
         String[] name = getResources().getStringArray(R.array.attractionNames);
         String[] address = getResources().getStringArray(R.array.attractionAddress);
-        String[] addressURI = getResources().getStringArray(R.array.attractionAddressURI);
-        String[] hours = getResources().getStringArray(R.array.attractionHours);
         String[] phone = getResources().getStringArray(R.array.attractionPhone);
         String[] website = getResources().getStringArray(R.array.attractionWebsiteURI);
-        String[] reviewStars = getResources().getStringArray(R.array.attractionReviewStars);
-        String[] twitter = getResources().getStringArray(R.array.attractionTwitterURI);
         TypedArray typedArray = getResources().obtainTypedArray(R.array.attractionPhoto);
 
         // populate the list with values from the typed array resources
         for (int i = 0; i < name.length ; i++) {
 
             int photoResourceId = typedArray.getResourceId(i, 0);
-            Log.d("PlacesActivity", "Attractions: adding - " + name[i] + " " + address[i] + " " + addressURI[i] + " " + phone[i] + " " + website[i] + " " + reviewStars[i] + " " + photoResourceId + " " + twitter[i] + " " + hours[i]);
-            places.add(new Places(name[i], address[i], addressURI[i], phone[i], website[i], reviewStars[i], photoResourceId, twitter[i], hours[i]));
+            Log.d("PlacesActivity", "Attractions: adding - " + name[i] + " " + address[i] + " " +  phone[i] + " " + website[i] + " " + photoResourceId );
+            places.add(new Places(name[i], address[i], phone[i], website[i],  photoResourceId));
 
         }
 
@@ -174,20 +163,16 @@ public class PlacesListActivity extends AppCompatActivity {
         // define the typed array resources that hold the data values
         String[] name = getResources().getStringArray(R.array.calendarNames);
         String[] address = getResources().getStringArray(R.array.calendarAddress);
-        String[] addressURI = getResources().getStringArray(R.array.calendarAddressURI);
-        String[] hours = getResources().getStringArray(R.array.calendarHours);
         String[] phone = getResources().getStringArray(R.array.calendarPhone);
         String[] website = getResources().getStringArray(R.array.calendarWebsiteURI);
-        String[] reviewStars = getResources().getStringArray(R.array.calendarReviewStars);
-        String[] twitter = getResources().getStringArray(R.array.calendarTwitterURI);
         TypedArray typedArray = getResources().obtainTypedArray(R.array.calendarPhoto);
 
         // populate the list with values from the typed array resources
         for (int i = 0; i < name.length ; i++) {
 
             int photoResourceId = typedArray.getResourceId(i, 0);
-            Log.d("PlacesActivity", "Calendar: adding - " + name[i] + " " + address[i] + " " + addressURI[i] + " " + phone[i] + " " + website[i] + " " + reviewStars[i] + " " + photoResourceId + " " + twitter[i] + " " + hours[i]);
-            places.add(new Places(name[i], address[i], addressURI[i], phone[i], website[i], reviewStars[i], photoResourceId, twitter[i], hours[i]));
+            Log.d("PlacesActivity", "Calendar: adding - " + name[i] + " " + address[i] + " " +  phone[i] + " " + website[i] + " " + photoResourceId );
+            places.add(new Places(name[i], address[i], phone[i], website[i],  photoResourceId));
 
         }
 

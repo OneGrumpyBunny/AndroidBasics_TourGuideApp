@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
-    <string name="cityName">Washington DC</string>
+    <string name="cityName">Alexandria, VA</string>
     <string name="restaurants">Restaurants</string>
     <string name="hotels">Hotels</string>
     <string name="attractions">Attractions</string>
@@ -9,7 +9,7 @@
     <string name="Attractions">Attractions</string>
     <string name="degrees">82°</string>
     <string name="area_info">Area Info</string>
-    <string name="pageTitle">Restaurants in Washington DC</string>
+    <string name="pageTitle">Places in Alexandria, VA</string>
     <string name="restaurant_name">Restaurant Name</string>
     <string name="place_name">Place Name</string>
     <string name="place_address">14th Street NW Washington, DC 20001</string>

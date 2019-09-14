@@ -1,117 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="restaurantNames">
-        <item>Seven Reasons</item>
-        <item>Estuary</item>
+        <item>Chart House</item>
+        <item>Old House Cosmopolitan</item>
+        <item>Namaste</item>
+        <item>Le Refuge Restaurant</item>
+        <item>Vaso\'s Mediterranean Bistro</item>
+        <item>Su Pollo</item>
+        <item>Caphe Banh Mi</item>
+        <item>Del Ray Cafe</item>
+        <item>Warehouse Bar &amp; Grill</item>
+        <item>Virtue Feed and Grain</item>
     </string-array>
     <string-array name="restaurantAddress">
-        <item>14th Street NW Washington, DC 20001</item>
-        <item>950 New York Ave NW Washington, DC 20001</item>
-    </string-array>
-    <string-array name="restaurantAddressURI">
-        <item>URI 1</item>
-        <item>URI 2</item>
+        <item>1 Cameron St, Alexandria, VA 22314</item>
+        <item>1024 Cameron St, Alexandria, VA 22314</item>
+        <item>6138 Rose Hill Dr, Alexandria, VA 22310</item>
+        <item>127 N Washington St, Ste C, Alexandria, VA 22314</item>
+        <item>1118 King St, Alexandria, VA 22314</item>
+        <item>8741 Richmond Hwy, Alexandria, VA 22309</item>
+        <item>407 Cameron St, Alexandria, VA 22314</item>
+        <item>205 E Howell Ave, Alexandria, VA 22301</item>
+        <item>214 King St, Alexandria, VA 22314</item>
+        <item>106 S Union St, Alexandria, VA 22314</item>
     </string-array>
     <string-array name="restaurantPhone">
-        <item>(202) 290–2630</item>
-        <item>(202) 844–5895</item>
+        <item>7036845080</item>
+        <item>7037179361</item>
+        <item>7038220408</item>
+        <item>7035484661</item>
+        <item>7035662720</item>
+        <item>7037996577</item>
+        <item>7035490800</item>
+        <item>7037179151</item>
+        <item>7036836868</item>
+        <item>5719703669</item>
     </string-array>
     <string-array name="restaurantWebsiteURI">
-        <item>https://www.sevenreasonsdc.com/</item>
-        <item>http://www.estuarydc.com/</item>
-    </string-array>
-    <string-array name="restaurantReviewStars">
-        <item>5 stars</item>
-        <item>4 stars</item>
+        <item>https://https://www.chart-house.com/locations/alexandria/</item>
+        <item>https://www.oldhousecosmopolitan.com/</item>
+        <item>http://http://namasteva.com/</item>
+        <item>https://www.lerefugealexandria.com</item>
+        <item>http://www.vasosonking.com/</item>
+        <item>http://www.supollorestaurant.com/</item>
+        <item>http://www.caphebanhmi.com/</item>
+        <item>http://www.delraycafe.com</item>
+        <item>https://www.warehouseoldtown.com</item>
+        <item>http://virtuefeedgrain.com/</item>
     </string-array>
     <integer-array name="restaurantPhoto">
-        <item>@drawable/sevenreasons</item>
-        <item>@drawable/estuary</item>
+        <item>@drawable/charthouse</item>
+        <item>@drawable/oldhousecosmo</item>
+        <item>@drawable/namaste</item>
+        <item>@drawable/larefuge</item>
+        <item>@drawable/vasos</item>
+        <item>@drawable/supollo</item>
+        <item>@drawable/caphebahnmi</item>
+        <item>@drawable/delraycafe</item>
+        <item>@drawable/warehouseoldtown</item>
+        <item>@drawable/virtue</item>
     </integer-array>
-    <string-array name="restaurantTwitterURI">
-        <item>/@sevenreasonsdc</item>
-        <item>/@sevenreasonsdc</item>
-    </string-array>
-    <string-array name="restaurantHours">
-        <item>Tuesday - Thursday: 5:30pm to 12:00am/nFriday - Saturday: 5:30pm to 12:30am/nSunday - 5:00pm to 10:00pm</item>
-        <item>Daily Breakfast: 6:30am - 11:00am/nBrunch: Saturday - Sunday 11:30am - 2:30pm/nLunch: Daily 11:30am - 2:30pm/nDinner: Sunday - Thursday 5pm to 10:30pm/nFriday - Saturday 5pm - 11pm</item>
-    </string-array>
 
 
     <string-array name="hotelNames">
-        <item>Hotel 1</item>
-        <item>Hotel 2</item>
+        <item>Hampton Inn Alexandria/Pentagon South</item>
+        <item>Holiday Inn Express &amp; Suites Alexandria-Fort Belvoir</item>
+        <item>Hampton Inn &amp; Suites Alexandria Old Town Area South</item>
+        <item>Hilton Alexandria Old Town</item>
+        <item>Hilton Garden Inn Alexandria Old Town</item>
+        <item>Homewood Suites Alexandria</item>
+        <item>Hampton Inn &amp; Suites Fort Belvoir Alexandria South</item>
+        <item>Hampton Inn Alexandria - Old Town/King Street Metro</item>
+        <item>SpringHill Suites Alexandria Old Town/Southwest</item>
+        <item>Hotel Indigo Old Town Alexandria</item>
     </string-array>
     <string-array name="hotelAddress">
-        <item>Hotel 1</item>
-        <item>Hotel 2</item>
-    </string-array>
-    <string-array name="hotelAddressURI">
-        <item>Hotel 1</item>
-        <item>Hotel 2</item>
+        <item>4800 Leesburg Pike, Alexandria, VA 22302</item>
+        <item>6055 Richmond Hwy, Alexandria, VA 22303</item>
+        <item>5821 Richmond Hwy, Alexandria, VA 22303</item>
+        <item>1767 King St, Alexandria, VA 22314</item>
+        <item>1620 Prince St, Alexandria, VA 22314</item>
+        <item>4850 Leesburg Pike, Alexandria, VA 22302</item>
+        <item>8843 Richmond Hwy, Alexandria, VA 22309</item>
+        <item>1616 King St, Alexandria, VA 22314</item>
+        <item>2950 Eisenhower Ave, Alexandria, VA 22314</item>
+        <item>220 S Union St, Alexandria, VA 22314</item>
     </string-array>
     <string-array name="hotelPhone">
-        <item>Hotel 1</item>
-        <item>Hotel 2</item>
+        <item>7036714800</item>
+        <item>18778595095</item>
+        <item>7033291400</item>
+        <item>7038370440</item>
+        <item>7033028300</item>
+        <item>7036716500</item>
+        <item>7036197026</item>
+        <item>7032999900</item>
+        <item>18446310595</item>
+        <item>18778595095</item>
     </string-array>
     <string-array name="hotelWebsiteURI">
-        <item>Hotel 1</item>
-        <item>Hotel 2</item>
-    </string-array>
-    <string-array name="hotelReviewStars">
-        <item>Hotel 1</item>
-        <item>Hotel 2</item>
+        <item>https://hamptoninn3.hilton.com/</item>
+        <item>https://www.ihg.com/holidayinnexpress/</item>
+        <item>https://hamptoninn3.hilton.com/</item>
+        <item>https://www.hilton.com</item>
+        <item>https://hiltongardeninn3.hilton.com</item>
+        <item>https://www.hilton.com</item>
+        <item>https://hamptoninn3.hilton.com/</item>
+        <item>https://hamptoninn3.hilton.com/</item>
+        <item>https://www.marriott.com/</item>
+        <item>https://www.ihg.com/hotelindigo/</item>
     </string-array>
     <integer-array name="hotelPhoto">
-        <item>@drawable/sevenreasons</item>
-        <item>@drawable/estuary</item>
+        <item>@drawable/hamptoninnpentagon</item>
+        <item>@drawable/holidayinnexpftbelvoir</item>
+        <item>@drawable/hamptoninnoldtownsouth</item>
+        <item>@drawable/hiltonoldtown</item>
+        <item>@drawable/hiltongardeninn</item>
+        <item>@drawable/homewoodsuites</item>
+        <item>@drawable/hamptoninnftbelvoir</item>
+        <item>@drawable/hamptoninnoldtown</item>
+        <item>@drawable/springhillsuites</item>
+        <item>@drawable/hotelindigo</item>
     </integer-array>
-    <string-array name="hotelTwitterURI">
-        <item>Hotel 1</item>
-        <item>Hotel 2</item>
-    </string-array>
-    <string-array name="hotelHours">
-        <item>Hotel 1</item>
-        <item>Hotel 2</item>
-    </string-array>
 
 
     <string-array name="attractionNames">
-        <item>Attraction 1</item>
-        <item>Attraction 1</item>
+        <item>Old Town</item>
+        <item>Old Town Watefront</item>
+        <item>Torpedo Factory Art Center</item>
+        <item>George Washington Masonic Temple</item>
+        <item>Carlyle House</item>
+        <item>George Washington\'s Mt. Vernon</item>
+        <item>Potomac Water Taxi</item>
+        <item>Woodlawn &amp; Pop-Leighey House</item>
     </string-array>
     <string-array name="attractionAddress">
-        <item>Attraction 1</item>
-        <item>Attraction 1</item>
-    </string-array>
-    <string-array name="attractionAddressURI">
-        <item>Attraction 1</item>
-        <item>Attraction 1</item>
+        <item>Alexandria, VA 22314</item>
+        <item>Alexandria, VA 22314</item>
+        <item>105 N Union St, Alexandria, VA 22314</item>
+        <item>101 Callahan Dr, Alexandria, VA 22301</item>
+        <item>121 N Fairfax St, Alexandria, VA 22314</item>
+        <item>3200 Mount Vernon Memorial Highway, Alexandria, VA 22121</item>
+        <item>Alexandria City Marina, Alexandria, VA</item>
+        <item>9000 Richmond Hwy, Alexandria, VA 22309</item>
     </string-array>
     <string-array name="attractionPhone">
-        <item>Attraction 1</item>
-        <item>Attraction 1</item>
+        <item>17038625817</item>
+        <item>12049438701</item>
+        <item>17037464570</item>
+        <item>17036832007</item>
+        <item>17035492997</item>
+        <item>17037802000</item>
+        <item>17036840580</item>
+        <item>17037804000</item>
     </string-array>
     <string-array name="attractionWebsiteURI">
-        <item>Attraction 1</item>
-        <item>Attraction 1</item>
-    </string-array>
-    <string-array name="attractionReviewStars">
-        <item>Attraction 1</item>
-        <item>Attraction 1</item>
+        <item>https://www.visitalexandriava.com/old-town-alexandria/</item>
+        <item>https://www.visitalexandriava.com/old-town-alexandria/</item>
+        <item>http://torpedofactory.org/</item>
+        <item>https://gwmemorial.org/</item>
+        <item>https://www.carlylehouse.org/</item>
+        <item>https://www.mountvernon.org/</item>
+        <item>https://www.potomacriverboatco.com/</item>
+        <item>http://www.woodlawnpopeleighey.org/</item>
     </string-array>
     <integer-array name="attractionPhoto">
-        <item>@drawable/sevenreasons</item>
-        <item>@drawable/estuary</item>
+        <item>@drawable/oldtown</item>
+        <item>@drawable/waterfront</item>
+        <item>@drawable/torpedofactory</item>
+        <item>@drawable/masonictemple</item>
+        <item>@drawable/carlylehouse</item>
+        <item>@drawable/mtvernon</item>
+        <item>@drawable/potomactaxi</item>
+        <item>@drawable/woodlawn</item>
     </integer-array>
-    <string-array name="attractionTwitterURI">
-        <item>Attraction 1</item>
-        <item>Attraction 1</item>
-    </string-array>
-    <string-array name="attractionHours">
-        <item>Attraction 1</item>
-        <item>Attraction 1</item>
-    </string-array>
 
 
     <string-array name="calendarNames">
@@ -119,10 +181,6 @@
         <item>Calender 2</item>
     </string-array>
     <string-array name="calendarAddress">
-        <item>Calendar 1</item>
-        <item>Calender 2</item>
-    </string-array>
-    <string-array name="calendarAddressURI">
         <item>Calendar 1</item>
         <item>Calender 2</item>
     </string-array>
@@ -134,20 +192,8 @@
         <item>Calendar 1</item>
         <item>Calender 2</item>
     </string-array>
-    <string-array name="calendarReviewStars">
-        <item>Calendar 1</item>
-        <item>Calender 2</item>
-    </string-array>
     <integer-array name="calendarPhoto">
         <item>@drawable/sevenreasons</item>
         <item>@drawable/estuary</item>
     </integer-array>
-    <string-array name="calendarTwitterURI">
-        <item>Calendar 1</item>
-        <item>Calender 2</item>
-    </string-array>
-    <string-array name="calendarHours">
-        <item>Calendar 1</item>
-        <item>Calender 2</item>
-    </string-array>
 </resources>

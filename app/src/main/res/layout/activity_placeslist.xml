@@ -21,14 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:id="@+id/divider"
-        android:background="@color/DividerColor"
-        app:layout_constraintTop_toBottomOf="@+id/titleBar"
-        app:layout_constraintBottom_toTopOf="@id/recyclerview"/>
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
@@ -44,6 +36,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        app:layout_constraintTop_toBottomOf="@+id/titleBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

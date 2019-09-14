@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 
@@ -65,7 +64,6 @@ public class PlacesAdapter extends RecyclerView.Adapter<BaseViewHolder>  {
         @BindView(R.id.addressURI) Button addressURI;
         @BindView(R.id.phone) Button phone;
         @BindView(R.id.website) Button website;
-        @BindView(R.id.reviewStars)   TextView reviewStars;
         @BindView(R.id.photo) ImageView photo;
 //        @BindView(R.id.twitter) Button twitter;
 
@@ -93,10 +91,8 @@ public class PlacesAdapter extends RecyclerView.Adapter<BaseViewHolder>  {
 
             if (places.getplaceAddress() != null) {
                 address.setText(places.getplaceAddress());
-            }
-            if (places.getAddressURI() != null) {
-                String address = places.getAddressURI();
-                openMaps(addressURI, address);
+                String mapLoc = places.getplaceAddress();
+                openMaps(addressURI, mapLoc);
             }
 
             if (places.getPhone() != null) {
@@ -107,13 +103,8 @@ public class PlacesAdapter extends RecyclerView.Adapter<BaseViewHolder>  {
 
             if (places.getWebsiteURI() != null) {
                 String url = places.getWebsiteURI();
-               openWebsite(website, url);
+                openWebsite(website, url);
             }
-
-            if (places.getReviewStars() != null) {
-                reviewStars.setText(places.getReviewStars());
-            }
-
 
             if (places.getPhoto() != 0) {
                 photo.setImageResource(places.getPhoto());
@@ -124,29 +115,29 @@ public class PlacesAdapter extends RecyclerView.Adapter<BaseViewHolder>  {
     }
 
     private void openWebsite(Button website, String url) {
-        website.setOnClickListener(view -> {
+        website.setOnClickListener(v-> {
             Uri webpage = Uri.parse(url);
             Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-            startActivity(intent);
+            v.getContext().startActivity(intent);
         });
 
     }
 
     private void openPhone(Button phone, String phoneNum) {
-        phone.setOnClickListener(view -> {
+        phone.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_DIAL);
             intent.setData(Uri.parse("tel:" + phoneNum));
-            startActivity(intent);
+            v.getContext().startActivity(intent);
 
         });
     }
 
     private void openMaps(Button address, String mapLoc) {
-        address.setOnClickListener(view -> {
+        address.setOnClickListener(v -> {
             Uri addressUri = Uri.parse("geo:0,0?q=" + mapLoc);
             Log.d("ImplicitIntents", "Opening Map Location: " + addressUri);
             Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
-            startActivity(intent);
+            v.getContext().startActivity(intent);
         });
     }
 }
