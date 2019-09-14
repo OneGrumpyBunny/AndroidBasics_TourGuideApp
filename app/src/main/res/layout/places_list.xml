@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/sevenreasons" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="3dp"
+                android:layout_toEndOf="@id/photo"
+                android:layout_toRightOf="@id/photo"
+                android:paddingTop="5dp"
+                android:text="@string/place_name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="3dp"
+                android:layout_toEndOf="@id/photo"
+                android:layout_toRightOf="@id/photo"
+                android:text="@string/place_address"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/address"
+                android:background="@drawable/icon_phone"
+                android:layout_toEndOf="@id/photo"
+                android:layout_toRightOf="@id/photo"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/website"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/address"
+                android:background="@drawable/icon_website"
+                android:layout_toEndOf="@id/phone"
+                android:layout_toRightOf="@id/phone"
+                android:layout_margin="3dp"/>
+
+
+<!--            <Button-->
+<!--                android:id="@+id/twitter"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_below="@+id/address"-->
+<!--                android:background="@drawable/icon_twitter"-->
+<!--                android:layout_toEndOf="@id/website"-->
+<!--                android:layout_toRightOf="@id/website"-->
+<!--                android:layout_margin="3dp"/>-->
+
+
+            <Button
+                android:id="@+id/addressURI"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/address"
+                android:background="@drawable/icon_map"
+                android:layout_toEndOf="@id/website"
+                android:layout_toRightOf="@id/website"
+                android:layout_margin="3dp"/>
+
+
+            <TextView
+                android:id="@+id/reviewStars"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@+id/address"
+                android:layout_margin="3dp"
+                android:layout_toEndOf="@id/addressURI"
+                android:layout_toRightOf="@id/addressURI"
+                android:text="@string/_5_stars" />
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/hours"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_below="@+id/address"-->
+<!--                android:layout_margin="3dp"-->
+<!--                android:layout_toEndOf="@id/reviewStars"-->
+<!--                android:layout_toRightOf="@id/reviewStars"-->
+<!--                android:text="@string/hours" />-->
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

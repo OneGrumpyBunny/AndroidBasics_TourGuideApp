@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="restaurantNames">
+        <item>Seven Reasons</item>
+        <item>Estuary</item>
+    </string-array>
+    <string-array name="restaurantAddress">
+        <item>14th Street NW Washington, DC 20001</item>
+        <item>950 New York Ave NW Washington, DC 20001</item>
+    </string-array>
+    <string-array name="restaurantAddressURI">
+        <item>URI 1</item>
+        <item>URI 2</item>
+    </string-array>
+    <string-array name="restaurantPhone">
+        <item>(202) 290–2630</item>
+        <item>(202) 844–5895</item>
+    </string-array>
+    <string-array name="restaurantWebsiteURI">
+        <item>https://www.sevenreasonsdc.com/</item>
+        <item>http://www.estuarydc.com/</item>
+    </string-array>
+    <string-array name="restaurantReviewStars">
+        <item>5 stars</item>
+        <item>4 stars</item>
+    </string-array>
+    <integer-array name="restaurantPhoto">
+        <item>@drawable/sevenreasons</item>
+        <item>@drawable/estuary</item>
+    </integer-array>
+    <string-array name="restaurantTwitterURI">
+        <item>/@sevenreasonsdc</item>
+        <item>/@sevenreasonsdc</item>
+    </string-array>
+    <string-array name="restaurantHours">
+        <item>Tuesday - Thursday: 5:30pm to 12:00am/nFriday - Saturday: 5:30pm to 12:30am/nSunday - 5:00pm to 10:00pm</item>
+        <item>Daily Breakfast: 6:30am - 11:00am/nBrunch: Saturday - Sunday 11:30am - 2:30pm/nLunch: Daily 11:30am - 2:30pm/nDinner: Sunday - Thursday 5pm to 10:30pm/nFriday - Saturday 5pm - 11pm</item>
+    </string-array>
+
+
+    <string-array name="hotelNames">
+        <item>Hotel 1</item>
+        <item>Hotel 2</item>
+    </string-array>
+    <string-array name="hotelAddress">
+        <item>Hotel 1</item>
+        <item>Hotel 2</item>
+    </string-array>
+    <string-array name="hotelAddressURI">
+        <item>Hotel 1</item>
+        <item>Hotel 2</item>
+    </string-array>
+    <string-array name="hotelPhone">
+        <item>Hotel 1</item>
+        <item>Hotel 2</item>
+    </string-array>
+    <string-array name="hotelWebsiteURI">
+        <item>Hotel 1</item>
+        <item>Hotel 2</item>
+    </string-array>
+    <string-array name="hotelReviewStars">
+        <item>Hotel 1</item>
+        <item>Hotel 2</item>
+    </string-array>
+    <integer-array name="hotelPhoto">
+        <item>@drawable/sevenreasons</item>
+        <item>@drawable/estuary</item>
+    </integer-array>
+    <string-array name="hotelTwitterURI">
+        <item>Hotel 1</item>
+        <item>Hotel 2</item>
+    </string-array>
+    <string-array name="hotelHours">
+        <item>Hotel 1</item>
+        <item>Hotel 2</item>
+    </string-array>
+
+
+    <string-array name="attractionNames">
+        <item>Attraction 1</item>
+        <item>Attraction 1</item>
+    </string-array>
+    <string-array name="attractionAddress">
+        <item>Attraction 1</item>
+        <item>Attraction 1</item>
+    </string-array>
+    <string-array name="attractionAddressURI">
+        <item>Attraction 1</item>
+        <item>Attraction 1</item>
+    </string-array>
+    <string-array name="attractionPhone">
+        <item>Attraction 1</item>
+        <item>Attraction 1</item>
+    </string-array>
+    <string-array name="attractionWebsiteURI">
+        <item>Attraction 1</item>
+        <item>Attraction 1</item>
+    </string-array>
+    <string-array name="attractionReviewStars">
+        <item>Attraction 1</item>
+        <item>Attraction 1</item>
+    </string-array>
+    <integer-array name="attractionPhoto">
+        <item>@drawable/sevenreasons</item>
+        <item>@drawable/estuary</item>
+    </integer-array>
+    <string-array name="attractionTwitterURI">
+        <item>Attraction 1</item>
+        <item>Attraction 1</item>
+    </string-array>
+    <string-array name="attractionHours">
+        <item>Attraction 1</item>
+        <item>Attraction 1</item>
+    </string-array>
+
+
+    <string-array name="calendarNames">
+        <item>Calendar 1</item>
+        <item>Calender 2</item>
+    </string-array>
+    <string-array name="calendarAddress">
+        <item>Calendar 1</item>
+        <item>Calender 2</item>
+    </string-array>
+    <string-array name="calendarAddressURI">
+        <item>Calendar 1</item>
+        <item>Calender 2</item>
+    </string-array>
+    <string-array name="calendarPhone">
+        <item>Calendar 1</item>
+        <item>Calender 2</item>
+    </string-array>
+    <string-array name="calendarWebsiteURI">
+        <item>Calendar 1</item>
+        <item>Calender 2</item>
+    </string-array>
+    <string-array name="calendarReviewStars">
+        <item>Calendar 1</item>
+        <item>Calender 2</item>
+    </string-array>
+    <integer-array name="calendarPhoto">
+        <item>@drawable/sevenreasons</item>
+        <item>@drawable/estuary</item>
+    </integer-array>
+    <string-array name="calendarTwitterURI">
+        <item>Calendar 1</item>
+        <item>Calender 2</item>
+    </string-array>
+    <string-array name="calendarHours">
+        <item>Calendar 1</item>
+        <item>Calender 2</item>
+    </string-array>
+</resources>
