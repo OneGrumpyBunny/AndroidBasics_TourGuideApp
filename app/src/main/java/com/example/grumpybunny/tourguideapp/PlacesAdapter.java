@@ -1,7 +1,6 @@
 package com.example.grumpybunny.tourguideapp;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 
@@ -21,6 +21,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static androidx.core.content.ContextCompat.startActivity;
+
 
 public class PlacesAdapter extends RecyclerView.Adapter<BaseViewHolder>  {
 
@@ -94,36 +95,19 @@ public class PlacesAdapter extends RecyclerView.Adapter<BaseViewHolder>  {
                 address.setText(places.getplaceAddress());
             }
             if (places.getAddressURI() != null) {
-                addressURI.setOnClickListener(view -> {
-                        // grab the value entered in the webText field
-                        String mapLoc = places.getAddressURI().toString();
-                        Uri addressUri = Uri.parse("geo:0,0?q=" + mapLoc);
-                        Log.d("ImplicitIntents", "Opening Map Location: " + addressUri);
-                        Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
-                        startActivity(intent);
-                });
+                String address = places.getAddressURI();
+                openMaps(addressURI, address);
             }
 
             if (places.getPhone() != null) {
-                website.setOnClickListener(view -> {
-                        String phoneNum = places.getPhone().toString();
-                        Intent intent = new Intent(Intent.ACTION_DIAL);
-                        intent.setData(Uri.parse("tel:" + phoneNum));
-                        startActivity(intent);
-
-                });
+                String phoneNum = places.getPhone();
+                openPhone(phone, phoneNum);
             }
 
 
             if (places.getWebsiteURI() != null) {
-                website.setOnClickListener(view -> {
-                    String url = places.getAddressURI();
-                    // Parse the URI and create the intent.
-                    Uri webpage = Uri.parse(url);
-                   Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-                    startActivity(intent);
-                });
-
+                String url = places.getWebsiteURI();
+               openWebsite(website, url);
             }
 
             if (places.getReviewStars() != null) {
@@ -137,5 +121,32 @@ public class PlacesAdapter extends RecyclerView.Adapter<BaseViewHolder>  {
 
         }
 
+    }
+
+    private void openWebsite(Button website, String url) {
+        website.setOnClickListener(view -> {
+            Uri webpage = Uri.parse(url);
+            Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+            startActivity(intent);
+        });
+
+    }
+
+    private void openPhone(Button phone, String phoneNum) {
+        phone.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:" + phoneNum));
+            startActivity(intent);
+
+        });
+    }
+
+    private void openMaps(Button address, String mapLoc) {
+        address.setOnClickListener(view -> {
+            Uri addressUri = Uri.parse("geo:0,0?q=" + mapLoc);
+            Log.d("ImplicitIntents", "Opening Map Location: " + addressUri);
+            Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+            startActivity(intent);
+        });
     }
 }
