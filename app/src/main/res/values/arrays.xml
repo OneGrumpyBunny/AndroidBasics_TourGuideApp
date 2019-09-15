@@ -13,16 +13,16 @@
         <item>Virtue Feed and Grain</item>
     </string-array>
     <string-array name="restaurantAddress">
-        <item>1 Cameron St, Alexandria, VA 22314</item>
-        <item>1024 Cameron St, Alexandria, VA 22314</item>
-        <item>6138 Rose Hill Dr, Alexandria, VA 22310</item>
-        <item>127 N Washington St, Ste C, Alexandria, VA 22314</item>
-        <item>1118 King St, Alexandria, VA 22314</item>
-        <item>8741 Richmond Hwy, Alexandria, VA 22309</item>
-        <item>407 Cameron St, Alexandria, VA 22314</item>
-        <item>205 E Howell Ave, Alexandria, VA 22301</item>
-        <item>214 King St, Alexandria, VA 22314</item>
-        <item>106 S Union St, Alexandria, VA 22314</item>
+        <item>1 Cameron St\nAlexandria, VA 22314</item>
+        <item>1024 Cameron St\nAlexandria, VA 22314</item>
+        <item>6138 Rose Hill Dr\nAlexandria, VA 22310</item>
+        <item>127 N Washington St, Ste C\nAlexandria, VA 22314</item>
+        <item>1118 King St\nAlexandria, VA 22314</item>
+        <item>8741 Richmond Hwy\nAlexandria, VA 22309</item>
+        <item>407 Cameron St\nAlexandria, VA 22314</item>
+        <item>205 E Howell Ave\nAlexandria, VA 22301</item>
+        <item>214 King St\nAlexandria, VA 22314</item>
+        <item>106 S Union St\nAlexandria, VA 22314</item>
     </string-array>
     <string-array name="restaurantPhone">
         <item>7036845080</item>
@@ -75,16 +75,16 @@
         <item>Hotel Indigo Old Town Alexandria</item>
     </string-array>
     <string-array name="hotelAddress">
-        <item>4800 Leesburg Pike, Alexandria, VA 22302</item>
-        <item>6055 Richmond Hwy, Alexandria, VA 22303</item>
-        <item>5821 Richmond Hwy, Alexandria, VA 22303</item>
-        <item>1767 King St, Alexandria, VA 22314</item>
-        <item>1620 Prince St, Alexandria, VA 22314</item>
-        <item>4850 Leesburg Pike, Alexandria, VA 22302</item>
-        <item>8843 Richmond Hwy, Alexandria, VA 22309</item>
-        <item>1616 King St, Alexandria, VA 22314</item>
-        <item>2950 Eisenhower Ave, Alexandria, VA 22314</item>
-        <item>220 S Union St, Alexandria, VA 22314</item>
+        <item>4800 Leesburg Pike\nAlexandria, VA 22302</item>
+        <item>6055 Richmond Hwy\nAlexandria, VA 22303</item>
+        <item>5821 Richmond Hwy\nAlexandria, VA 22303</item>
+        <item>1767 King St\nAlexandria, VA 22314</item>
+        <item>1620 Prince St\nAlexandria, VA 22314</item>
+        <item>4850 Leesburg Pike\nAlexandria, VA 22302</item>
+        <item>8843 Richmond Hwy\nAlexandria, VA 22309</item>
+        <item>1616 King St\nAlexandria, VA 22314</item>
+        <item>2950 Eisenhower Ave\nAlexandria, VA 22314</item>
+        <item>220 S Union St\nAlexandria, VA 22314</item>
     </string-array>
     <string-array name="hotelPhone">
         <item>7036714800</item>
@@ -137,12 +137,12 @@
     <string-array name="attractionAddress">
         <item>Alexandria, VA 22314</item>
         <item>Alexandria, VA 22314</item>
-        <item>105 N Union St, Alexandria, VA 22314</item>
-        <item>101 Callahan Dr, Alexandria, VA 22301</item>
-        <item>121 N Fairfax St, Alexandria, VA 22314</item>
-        <item>3200 Mount Vernon Memorial Highway, Alexandria, VA 22121</item>
-        <item>Alexandria City Marina, Alexandria, VA</item>
-        <item>9000 Richmond Hwy, Alexandria, VA 22309</item>
+        <item>105 N Union St\nAlexandria, VA 22314</item>
+        <item>101 Callahan Dr\nAlexandria, VA 22301</item>
+        <item>121 N Fairfax St\nAlexandria, VA 22314</item>
+        <item>3200 Mount Vernon Memorial Highway\nAlexandria, VA 22121</item>
+        <item>Alexandria City Marina\nAlexandria, VA</item>
+        <item>9000 Richmond Hwy\nAlexandria, VA 22309</item>
     </string-array>
     <string-array name="attractionPhone">
         <item>17038625817</item>
@@ -177,23 +177,66 @@
 
 
     <string-array name="calendarNames">
-        <item>Calendar 1</item>
-        <item>Calender 2</item>
+        <item>Old Town Boutique District Shop &amp; Stroll</item>
+        <item>17th Annual King Street Art Festival</item>
+        <item>Colonial Market &amp; Fair</item>
+        <item>Apothecary Geek Tour</item>
+        <item>Pipes and Drums Waterfront Concert</item>
+        <item>Taste of Old Town North</item>
+        <item>Cinema Del Ray Outdoor Movies</item>
     </string-array>
     <string-array name="calendarAddress">
-        <item>Calendar 1</item>
-        <item>Calender 2</item>
+        <item>Old Town\nAlexandria, VA</item>
+        <item>Historic King Street\nAlexandria, VA</item>
+        <item>George Washington\'s Mount Vernon</item>
+        <item>105&#8211;107 S. Fairfax Street\nAlexandria, VA</item>
+        <item>Waterfront Park\n1A Prince St.\nAlexandria, VA</item>
+        <item>Montgomery Park\n901 N. Royal Street\nAlexandria, VA</item>
+        <item>Mount Vernon Recreation Center\n2701 Commonwealth Avenue\nAlexandria, VA</item>
     </string-array>
-    <string-array name="calendarPhone">
-        <item>Calendar 1</item>
-        <item>Calender 2</item>
+    <string-array name="calendarDates">
+        <item>September 12&#8211;15</item>
+        <item>September 21&#8211;23</item>
+        <item>September 14&#8211;15</item>
+        <item>September 15</item>
+        <item>September 19</item>
+        <item>September 19</item>
+        <item>September 21</item>
     </string-array>
+    <integer-array name="calendarICalBegin">
+        <item>12</item>
+        <item>21</item>
+        <item>14</item>
+        <item>15</item>
+        <item>19</item>
+        <item>19</item>
+        <item>21</item>
+    </integer-array>
+    <integer-array name="calendarICalEnd">
+        <item>13</item>
+        <item>23</item>
+        <item>15</item>
+        <item>15</item>
+        <item>19</item>
+        <item>19</item>
+        <item>21</item>
+    </integer-array>
     <string-array name="calendarWebsiteURI">
-        <item>Calendar 1</item>
-        <item>Calender 2</item>
+        <item>https://www.eventbrite.com/e/2019-shop-stroll-vip-experience-tickets-68025761885</item>
+        <item>https://www.visitalexandriava.com/things-to-do/events/king-street-art-festival/</item>
+        <item>https://www.mountvernon.org/colonialfair</item>
+        <item>http://apothecarymuseum.org/</item>
+        <item>https://www.facebook.com/CityofAlexandriaPipesandDrums</item>
+        <item>http://www.oldtownnorth.org/</item>
+        <item>https://www.facebook.com/cinemadelray</item>
     </string-array>
     <integer-array name="calendarPhoto">
-        <item>@drawable/sevenreasons</item>
-        <item>@drawable/estuary</item>
+        <item>@drawable/boutique_show_stroll</item>
+        <item>@drawable/king_street_art_fair</item>
+        <item>@drawable/colonialmarket</item>
+        <item>@drawable/apothocary</item>
+        <item>@drawable/pipesanddrums</item>
+        <item>@drawable/tasteofoldtown</item>
+        <item>@drawable/delrayoutdoormovies</item>
     </integer-array>
 </resources>

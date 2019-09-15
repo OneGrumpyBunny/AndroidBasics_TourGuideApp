@@ -1,59 +1,54 @@
 package com.example.grumpybunny.tourguideapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
+
+    // Initialize the ViewPager
+    @BindView(R.id.container)
+    ViewPager viewPager;
+
+    // Initialize the TabLayout
+    @BindView(R.id.sliding_tabs)
+    TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Remove title bar
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
+        // Initialize ButterKnife
+        ButterKnife.bind(this);
 
-        // start the toolbar. This will hold icons for actions users can take
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        // Setup the ViewPager
+        setupViewPager(viewPager);
 
-        TextView restaurants = findViewById(R.id.restaurants);
-        TextView hotels = findViewById(R.id.hotels);
-        TextView attractions = findViewById(R.id.attractions);
-        TextView calendar = findViewById(R.id.calendar);
+        // Attach the ViewPager to the TabLayout
+        tabLayout.setupWithViewPager(viewPager);
+    }
 
-        // click listener for the restaurants button
-        restaurants.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), PlacesListActivity.class);
-            intent.putExtra("title", "Restaurants in Washington DC");
-            intent.putExtra("dataSet", "Restaurants");
-            v.getContext().startActivity(intent);
-        });
+    private void setupViewPager(ViewPager viewPager) {
+        // Initialize the FragmentStatePagerAdapter
+        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
 
-        // click listener for the attractions button
-        attractions.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), PlacesListActivity.class);
-            intent.putExtra("title", "Attractions in Washington DC");
-            intent.putExtra("dataSet", "Attractions");
-            v.getContext().startActivity(intent);
-        });
+        // Add the Fragments to the adapter
+        adapter.addFragment(new RestaurantsFragment(), getResources().getString(R.string.restaurants_title));
+        adapter.addFragment(new HotelFragment(), getResources().getString(R.string.hotels_title));
+        adapter.addFragment(new AttractionFragment(), getResources().getString(R.string.attractions_title));
+        adapter.addFragment(new CalendarFragment(), getResources().getString(R.string.events_title));
 
-        // click listener for the attractions button
-        hotels.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), PlacesListActivity.class);
-            intent.putExtra("title", "Hotels in Washington DC");
-            intent.putExtra("dataSet", "Hotels");
-            v.getContext().startActivity(intent);
-        });
-
-        // click listener for the calendar button
-        calendar.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), PlacesListActivity.class);
-            intent.putExtra("title", "Events in Washington DC");
-            intent.putExtra("dataSet", "Events");
-            v.getContext().startActivity(intent);
-        });
+        // Attach the adapter to the ViewPager
+        viewPager.setAdapter(adapter);
     }
 }

@@ -1,10 +1,6 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
     <string name="cityName">Alexandria, VA</string>
-    <string name="restaurants">Restaurants</string>
-    <string name="hotels">Hotels</string>
-    <string name="attractions">Attractions</string>
-    <string name="calendar">Calendar of Events</string>
     <string name="cityDetails">CityDetails</string>
     <string name="Attractions">Attractions</string>
     <string name="degrees">82°</string>
@@ -15,4 +11,11 @@
     <string name="place_address">14th Street NW Washington, DC 20001</string>
     <string name="_5_stars">5 Stars</string>
     <string name="hours">Hours</string>
+
+    <!-- fragment names -->
+    <string name="restaurants_title">Restaurants</string>
+    <string name="hotels_title">Hotels</string>
+    <string name="attractions_title">Attractions</string>
+    <string name="events_title">Events</string>
+
 </resources>
