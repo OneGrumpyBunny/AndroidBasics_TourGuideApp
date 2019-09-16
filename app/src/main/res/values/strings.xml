@@ -8,9 +8,10 @@
     <string name="pageTitle">Places in Alexandria, VA</string>
     <string name="restaurant_name">Restaurant Name</string>
     <string name="place_name">Place Name</string>
-    <string name="place_address">14th Street NW Washington, DC 20001</string>
+    <string name="place_address">14th Street NW\nWashington, DC 20001</string>
     <string name="_5_stars">5 Stars</string>
     <string name="hours">Hours</string>
+    <string name="locImage">Image of location</string>
 
     <!-- fragment names -->
     <string name="restaurants_title">Restaurants</string>

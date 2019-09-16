@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindArray;
 import butterknife.BindView;
@@ -36,12 +37,12 @@ public class CalendarFragment extends Fragment {
     String[] website;
     @BindArray(R.array.calendarPhoto)
     TypedArray typedArray;
-    @BindArray(R.array.calendarICalBegin)
-    int[] ICalBegin;
-    @BindArray(R.array.calendarICalEnd)
-    int[] ICalEnd;
+    @BindArray(R.array.calendarCalBegin)
+    int[] calBegin;
+    @BindArray(R.array.calendarCalEnd)
+    int[] calEnd;
     // Initialize the ArrayList
-    private ArrayList<Places> places = new ArrayList<>();
+    List<Places> places = new ArrayList<>();
 
     @Nullable
     @Override
@@ -51,14 +52,11 @@ public class CalendarFragment extends Fragment {
         // Initialize ButterKnife
         ButterKnife.bind(this, view);
 
-        // Check if this is not the first time to load the fragment
-        // To avoid duplicate items in the ArrayList
-        if (savedInstanceState == null) {
-            // Setup the ArrayList
-            setupArrayList();
-        }
+        // Setup the ArrayList
+        setupArrayList();
+
         // Setup the recycler view
-        setupRecyclerView(view);
+        setupRecyclerView();
 
         return view;
     }
@@ -69,11 +67,11 @@ public class CalendarFragment extends Fragment {
         for (int i = 0; i < name.length; i++) {
 
             int photoResourceId = typedArray.getResourceId(i, 0);
-            places.add(new Places(name[i], address[i], website[i], photoResourceId, ICalBegin[i], ICalEnd[i]));
+            places.add(new Places(name[i], address[i], website[i], photoResourceId, calBegin[i], calEnd[i]));
         }
     }
 
-    private void setupRecyclerView(View view) {
+    private void setupRecyclerView() {
 
         // Initialize the adapter, and pass the ArrayList to it
         PlacesAdapter adapter = new PlacesAdapter(places);

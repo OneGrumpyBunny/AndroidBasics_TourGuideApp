@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="dimen150">150dp</dimen>
+    <dimen name="dimen100">100dp</dimen>
+    <dimen name="dimen50">50dp</dimen>
     <dimen name="padding30">30dp</dimen>
     <dimen name="padding16">16dp</dimen>
     <dimen name="padding8">8dp</dimen>
     <dimen name="padding3">3dp</dimen>
+    <dimen name="dimen0">0dp</dimen>
+    <dimen name="divider">1dp</dimen>
+    <dimen name="medText">18sp</dimen>
+    <dimen name="smText">11sp</dimen>
 </resources>

@@ -12,8 +12,8 @@ public class Places {
     private String phone;
     private String websiteURI;
     private int photo;
-    private int ICalBegin;
-    private int ICalEnd;
+    private int calBegin;
+    private int calEnd;
 
     /**
      * Create a new Places object.
@@ -29,11 +29,11 @@ public class Places {
     /**
      * Create a second Places object with different arguments ( for Calendar output).
      */
-    public Places(String placeName, String placeAddress, String placeWebsiteURI, int placePhoto, int placeICalBegin, int placeICalEnd) {
+    public Places(String placeName, String placeAddress, String placeWebsiteURI, int placePhoto, int placeCalBegin, int placeCalEnd) {
         name = placeName;
         address = placeAddress;
-        ICalBegin = placeICalBegin;
-        ICalEnd = placeICalEnd;
+        calBegin = placeCalBegin;
+        calEnd = placeCalEnd;
         websiteURI = placeWebsiteURI;
         photo = placePhoto;
     }
@@ -50,12 +50,12 @@ public class Places {
         return phone;
     }
 
-    public int getICalBegin() {
-        return ICalBegin;
+    public int getCalBegin() {
+        return calBegin;
     }
 
-    public int getICalEnd() {
-        return ICalEnd;
+    public int getCalEnd() {
+        return calEnd;
     }
 
     public String getWebsiteURI() {

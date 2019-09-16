@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindArray;
 import butterknife.BindView;
@@ -40,7 +41,7 @@ public class HotelFragment extends Fragment {
     @BindArray(R.array.hotelPhoto)
     TypedArray typedArray;
     // Initialize the ArrayList
-    private ArrayList<Places> places = new ArrayList<>();
+    List<Places> places = new ArrayList<>();
 
     @Nullable
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -49,14 +50,11 @@ public class HotelFragment extends Fragment {
         // Initialize ButterKnife
         ButterKnife.bind(this, view);
 
-        // Check if this is not the first time to load the fragment
-        // To avoid duplicate items in the ArrayList
-        if (savedInstanceState == null) {
-            // Setup the ArrayList
-            setupArrayList();
-        }
+        // Setup the ArrayList
+        setupArrayList();
+
         // Setup the recycler view
-        setupRecyclerView(view);
+        setupRecyclerView();
 
         return view;
     }
@@ -67,13 +65,12 @@ public class HotelFragment extends Fragment {
         for (int i = 0; i < name.length; i++) {
 
             int photoResourceId = typedArray.getResourceId(i, 0);
-            Log.d("Fragment", "Hotels: adding - " + name[i] + " " + address[i] + " " + phone[i] + " " + website[i] + " " + photoResourceId);
             places.add(new Places(name[i], address[i], phone[i], website[i], photoResourceId));
 
         }
     }
 
-    private void setupRecyclerView(View view) {
+    private void setupRecyclerView() {
 
         // Initialize the adapter, and pass the ArrayList to it
         PlacesAdapter adapter = new PlacesAdapter(places);

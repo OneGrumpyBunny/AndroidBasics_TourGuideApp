@@ -64,14 +64,14 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
 
         // Calendar is present in only 1 of the 4 lists
         // therefore hide the button when not in use
-        if (places.getICalBegin() != 0) {
-            int ICalBegin = places.getICalBegin();
-            int ICalEnd = places.getICalEnd();
+        if (places.getCalBegin() != 0) {
+            int calBegin = places.getCalBegin();
+            int calEnd = places.getCalEnd();
             String eventTitle = places.getPlaceName();
             String eventLocation = places.getplaceAddress();
-            openICal(holder.ICal, eventTitle, eventLocation, ICalBegin, ICalEnd);
+            openCal(holder.cal, eventTitle, eventLocation, calBegin, calEnd);
         } else {
-            holder.ICal.setVisibility(View.GONE);
+            holder.cal.setVisibility(View.GONE);
         }
 
         if (places.getWebsiteURI() != null) {
@@ -122,12 +122,12 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
     }
 
     // this opens a Calendar app when the calendar button is tapped
-    private void openICal(Button iCal, String title, String location, int dateBegin, int dateEnd) {
+    private void openCal(Button cal, String title, String location, int dateBegin, int dateEnd) {
         Calendar beginDate = Calendar.getInstance();
         beginDate.set(2019, 8, dateBegin, 8, 0);
         Calendar endDate = Calendar.getInstance();
         endDate.set(2019, 8, dateEnd, 20, 0);
-        iCal.setOnClickListener(v -> {
+        cal.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_EDIT)
                     .setType("vnd.android.cursor.item/event")
                     .putExtra(CalendarContract.Events.TITLE, title)
@@ -156,8 +156,8 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
         Button website;
         @BindView(R.id.photo)
         ImageView photo;
-        @BindView(R.id.ICal)
-        Button ICal;
+        @BindView(R.id.cal)
+        Button cal;
 
         // bind the view
         public ViewHolder(View itemView) {

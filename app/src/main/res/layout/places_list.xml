@@ -12,15 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:padding="8dp"
-        card_view:cardCornerRadius="4dp"
+        android:padding="@dimen/padding8"
+        card_view:cardCornerRadius="@dimen/padding3"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintTop_toTopOf="parent">
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="@dimen/divider"
             android:background="@color/DividerColor"/>
 
         <RelativeLayout
@@ -55,8 +55,8 @@
                 android:id="@+id/addressURI"
                 style="@style/placeAddressURI" />
             <Button
-                android:id="@+id/ICal"
-                style="@style/placeICal" />
+                android:id="@+id/cal"
+                style="@style/placeCal" />
 
 
         </RelativeLayout>

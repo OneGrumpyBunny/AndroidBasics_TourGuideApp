@@ -21,7 +21,7 @@
 
     <style name="CityName">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_height">@dimen/dimen100</item>
         <item name="android:background">@color/text</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">@dimen/padding16</item>
@@ -29,7 +29,7 @@
 
     <style name="RecyclerView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_height">@dimen/padding0</item>
         <item name="android:layout_marginStart">@dimen/padding16</item>
         <item name="android:layout_marginLeft">@dimen/padding16</item>
         <item name="android:layout_marginTop">@dimen/padding8</item>
@@ -39,15 +39,15 @@
     </style>
 
     <style name="placePhoto">
-        <item name="android:layout_width">150dp</item>
-        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">@dimen/dimen150</item>
+        <item name="android:layout_height">@dimen/dimen50</item>
         <item name="android:layout_marginStart">@dimen/padding8</item>
         <item name="android:layout_marginLeft">@dimen/padding8</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginEnd">25dp</item>
-        <item name="android:layout_marginRight">25dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
-        <item name="android:contentDescription">TODO</item>
+        <item name="android:layout_marginTop">@dimen/padding8</item>
+        <item name="android:layout_marginEnd">@dimen/padding30</item>
+        <item name="android:layout_marginRight">@dimen/padding30</item>
+        <item name="android:layout_marginBottom">@dimen/padding8</item>
+        <item name="android:contentDescription">@string/locImage</item>
     </style>
 
     <style name="placeName">
@@ -60,7 +60,7 @@
         <item name="android:layout_toRightOf">@id/photo</item>
         <item name="android:paddingTop">@dimen/padding8</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/medText</item>
     </style>
 
     <style name="placeAddress">
@@ -72,7 +72,7 @@
         <item name="android:layout_margin">@dimen/padding3</item>
         <item name="android:layout_toEndOf">@id/photo</item>
         <item name="android:layout_toRightOf">@id/photo</item>
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">@dimen/smText</item>
     </style>
 
     <style name="placePhone">
@@ -105,7 +105,7 @@
         <item name="android:layout_margin">@dimen/padding3</item>
     </style>
 
-    <style name="placeICal">
+    <style name="placeCal">
         <item name="android:layout_width">@dimen/padding30</item>
         <item name="android:layout_height">@dimen/padding30</item>
         <item name="android:layout_below">@+id/address</item>
