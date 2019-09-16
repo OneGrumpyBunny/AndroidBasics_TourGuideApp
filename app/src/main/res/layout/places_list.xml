@@ -27,10 +27,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/photo"
-            android:src="@drawable/sevenreasons"
-            style="@style/placePhoto" />
+            <ImageView
+                android:id="@+id/photo"
+                style="@style/placePhoto"
+                android:layout_height="100dp"
+                android:src="@drawable/sevenreasons" />
 
             <TextView
                 android:id="@+id/name"

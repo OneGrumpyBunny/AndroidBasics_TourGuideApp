@@ -40,12 +40,12 @@
 
     <style name="placePhoto">
         <item name="android:layout_width">@dimen/dimen150</item>
-        <item name="android:layout_height">@dimen/dimen50</item>
+        <item name="android:layout_height">@dimen/dimen100</item>
         <item name="android:layout_marginStart">@dimen/padding8</item>
         <item name="android:layout_marginLeft">@dimen/padding8</item>
         <item name="android:layout_marginTop">@dimen/padding8</item>
-        <item name="android:layout_marginEnd">@dimen/padding30</item>
-        <item name="android:layout_marginRight">@dimen/padding30</item>
+        <item name="android:layout_marginEnd">@dimen/padding25</item>
+        <item name="android:layout_marginRight">@dimen/padding25</item>
         <item name="android:layout_marginBottom">@dimen/padding8</item>
         <item name="android:contentDescription">@string/locImage</item>
     </style>
